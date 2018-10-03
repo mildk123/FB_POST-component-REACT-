@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import FbImageLibrary from 'react-fb-image-grid';
+// import FbImageLibrary from 'react-fb-image-grid';
+import FbImageLibrary from '../Images'
+import '../../CSS/Post.css'
 
 
-const images = ['https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350',
-    'https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg',
-    'https://wallpaperbrowse.com/media/images/soap-bubble-1958650_960_720.jpg',
-    'https://cdn.pixabay.com/photo/2016/10/27/22/53/heart-1776746_960_720.jpg',
-    'https://images.pexels.com/photos/257840/pexels-photo-257840.jpeg?auto=compress&cs=tinysrgb&h=350', " ", " "
+const images = [
+    'https://s3.amazonaws.com/secretsaucefiles/photos/images/000/107/867/large/Samples.jpeg?1485369806',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9p3NDZJgywrwhR1dqSBRKshGf2P9cTDI4yM2JIAQ3NLNQeYNy',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2QpuZBjR8wPwKUleiQteTozL1Kl95_HzSx2STyYSLKNFpiVli',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp5KErePBeTqsPjQJ-yrTlm7UdYGaMMjgQ6qgYVCJmP0wE6zJg',
+    'http://www.voyagecharters.com/media//magpleasure/imagegallery/file_name_file/0/2/021a845ff10925a89c802cdaca844de8.jpg',
 ]
 
 class Post extends Component {
@@ -17,54 +20,56 @@ class Post extends Component {
     render() {
         return (
             <div>
-                {/* TOP SECTION OF THE POST */}
-                {/* ----------------------------------------------------- */}
-                <div id="post-header">
-                    <div id="top-top-row">
-                        <div id="dp-row">
-                            <img src="https://wallpaperbrowse.com/media/images/soap-bubble-1958650_960_720.jpg" alt="profile-pic" />
+                <div id="post">
+                    {/* TOP SECTION OF THE POST */}
+                    {/* ----------------------------------------------------- */}
+                    <div id="post-header">
+                        <div id="top-top-row">
+                            <div id="dp-row">
+                                <img src="https://www.clevelanddentalhc.com/wp-content/uploads/2018/03/sample-avatar.jpg" alt="profile-pic" />
 
-                        </div>
-                        <div id="desc-row">
-                            <p>Alterations By Hammad</p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* MID SECTION OF THE POST */}
-                {/* ----------------------------------------------------- */}
-                <div id='images-mid'>
-                    <FbImageLibrary images={images} width={50} />
-                </div>
-
-
-                {/* BOTTOM SECTION OF THE POST */}
-                {/* ----------------------------------------------------- */}
-                <div>
-                    <div id="bottom-top-row">
-                        <div id="reactions">
-
-                        </div>
-                        <div id="likes-list">
-
-                        </div>
-                        <div id="comments-list">
-
+                            </div>
+                            <div id="desc-row">
+                                <p>Alterations  By Hammad</p>
+                            </div>
                         </div>
                     </div>
-                    <div id="bottom-bottom-row">
-                        <div id="like-btn">
 
-                        </div>
-                        <div id="comment-btn">
+                    {/* MID SECTION OF THE POST */}
+                    {/* ----------------------------------------------------- */}
+                    <div id='images-mid'>
+                        <FbImageLibrary images={images} countFrom={5} width={100} />
+                    </div>
 
+
+                    {/* BOTTOM SECTION OF THE POST */}
+                    {/* ----------------------------------------------------- */}
+                    <div>
+                        <div id="bottom-top-row">
+                            <div id="reactions">
+
+                            </div>
+                            <div id="likes-list">
+
+                            </div>
+                            <div id="comments-list">
+
+                            </div>
                         </div>
-                        <div id="share-btn">
+                        <div id="bottom-bottom-row">
+                            <div id="like-btn">
+
+                            </div>
+                            <div id="comment-btn">
+
+                            </div>
+                            <div id="share-btn">
+
+                            </div>
 
                         </div>
 
                     </div>
-
                 </div>
             </div>
         );
