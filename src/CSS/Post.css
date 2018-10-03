@@ -1,0 +1,48 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+#post{
+    float: left;
+    width: 45%;
+    height: auto;
+    margin: 5% auto auto 25%;
+}
+
+#post-header{
+    float: left;
+    background: rgb(231, 231, 231);
+    padding: 2%;
+}
+
+
+#top-top-row{
+    float: left;
+    background: rgb(199, 199, 199);
+}
+#dp-row > img{
+    width: 15%;
+    padding: 2%;
+    border-radius: 100px;
+    float: left;
+}
+
+#desc-row{
+    float: left;
+    padding: 2%;
+    width: 70%;
+}
+#desc-row > p{
+    font-size: 1.2em;
+    width: inherit;
+}
+
+#images-mid{
+    border: 1px solid red;
+}
+
+.container > img{
+    height: 5px !important;
+}
