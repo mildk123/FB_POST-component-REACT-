@@ -3,7 +3,6 @@
     margin: 0%;
 }
 
-
 #post{
     float: left;
     width: 45%;
@@ -11,9 +10,14 @@
     margin: 5% auto auto 25%;
 }
 
+/* ***********************************************/
+/*                     TOP ROW                  */
+/* ***********************************************/
+
 #post-header{
     float: left;
     background: rgb(231, 231, 231);
+    border-radius: 15px 15px 0px 0px;
     padding: 2%;
 }
 
@@ -39,10 +43,100 @@
     width: inherit;
 }
 
-#images-mid{
-    border: 1px solid red;
+
+/* ***********************************************/
+/*                     MID ROW                  */
+/* ***********************************************/
+.App{
+    padding: 0% !important;
+}
+.container{
+    padding: 0% !important;
+    margin: 0% !important;
 }
 
-.container > img{
-    height: 5px !important;
+.height-one {
+    height: 550px !important;    
+    border-radius: 0%;
+}
+.height-two {
+    height: 350px !important;
+    border-radius: 0%; 
+}
+.height-three{
+    height: 250px !important;
+    border-radius: 0%;
+}
+.height-four{
+    height: 250px !important;
+    border-radius: 0%;
+}
+
+/* ***********************************************/
+/*                   BOTTOM ROW                  */
+/* ***********************************************/
+
+#interact-bottom{
+    background: rgb(255, 255, 255);
+    border-radius:  0px 0px 15px 15px;
+}
+
+#bottom-top-row{
+    border-bottom: 1px solid gray;
+    float: left;
+    width: 100%
+}
+
+#reactions{
+    float: left;
+    padding: 5px;
+}
+
+#likes-list{
+    float: left;
+    padding: 2px;
+}
+
+#comments-list{
+    float: right;
+    padding: 2px;
+}
+
+#bottom-bottom-row{
+    background: blanchedalmond;
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+
+#like-btn{
+    float: left;
+    padding: 0% 15% 0% 10%;
+    font-size: 1.2em;
+    border-right: 1px solid black;
+}
+#comment-btn{
+    float: left;
+    padding: 0% 12% 0% 10%;
+    font-size: 1.2em;
+}
+#share-btn{
+    float: left;
+    padding: 0% 15% 0% 10%;
+    font-size: 1.2em;
+    border-left: 1px solid black;
+
+}
+
+#like-btn > input[type=button]{
+    border: none;
+    background: none;
+}
+#comment-btn > input[type=button]{
+    border: none;
+    background: none;
+}
+#share-btn > input[type=button]{
+    border: none;
+    background: none;
 }
