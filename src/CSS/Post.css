@@ -2,12 +2,17 @@
     padding: 0%;
     margin: 0%;
 }
+body{
+    background: rgb(238, 238, 238);
+}
 
 #post{
     float: left;
     width: 45%;
     height: auto;
     margin: 5% auto auto 25%;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
 }
 
 /* ***********************************************/
@@ -16,26 +21,24 @@
 
 #post-header{
     float: left;
-    background: rgb(231, 231, 231);
     border-radius: 15px 15px 0px 0px;
-    padding: 2%;
+    padding: 1%;
 }
 
 
 #top-top-row{
     float: left;
-    background: rgb(199, 199, 199);
 }
 #dp-row > img{
     width: 15%;
-    padding: 2%;
+    padding: 1%;
     border-radius: 100px;
     float: left;
 }
 
 #desc-row{
     float: left;
-    padding: 2%;
+    padding: 3% 0% 1% 1%;
     width: 70%;
 }
 #desc-row > p{
@@ -77,12 +80,12 @@
 /* ***********************************************/
 
 #interact-bottom{
-    background: rgb(255, 255, 255);
     border-radius:  0px 0px 15px 15px;
 }
 
 #bottom-top-row{
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    border-bottom-width: 0.1px;
     float: left;
     width: 100%
 }
@@ -103,29 +106,33 @@
 }
 
 #bottom-bottom-row{
-    background: blanchedalmond;
     float: left;
     width: 100%;
     padding: 5px;
 }
 
 #like-btn{
+    font-weight: 600;
+    color: rgb(109, 109, 109);
     float: left;
-    padding: 0% 15% 0% 10%;
+    padding: 0% 10% 0% 8%;
     font-size: 1.2em;
-    border-right: 1px solid black;
+    border-right: 1px solid rgb(228, 228, 228);
 }
 #comment-btn{
+    font-weight: 600;
+    color: rgb(109, 109, 109);
     float: left;
-    padding: 0% 12% 0% 10%;
+    padding: 0% 8% 0% 10%;
     font-size: 1.2em;
 }
 #share-btn{
+    font-weight: 600;
+    color: rgb(109, 109, 109);
     float: left;
-    padding: 0% 15% 0% 10%;
+    padding: 0% 0% 0% 10%;
     font-size: 1.2em;
-    border-left: 1px solid black;
-
+    border-left: 1px solid rgb(228, 228, 228);
 }
 
 #like-btn > input[type=button]{
