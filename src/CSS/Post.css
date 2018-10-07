@@ -29,17 +29,30 @@ body{
 #top-top-row{
     float: left;
 }
+
 #dp-row > img{
-    width: 15%;
+    float: left;
+    width: 12%;
     padding: 1%;
     border-radius: 100px;
+}
+
+#name-row{
     float: left;
+    padding: 1.5% 0% 1% 1.5%;
+    width: 70%;
+}
+
+#name-row > p{
+    font-weight: 600;
+    font-size: 1.4em;
 }
 
 #desc-row{
     float: left;
-    padding: 3% 0% 1% 1%;
-    width: 70%;
+    padding: 1% 0% 1% 2%;
+    width: 100%;
+    clear: both;
 }
 #desc-row > p{
     font-size: 1.2em;
@@ -147,3 +160,4 @@ body{
     border: none;
     background: none;
 }
+
