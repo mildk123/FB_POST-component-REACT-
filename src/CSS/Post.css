@@ -96,6 +96,19 @@ body{
     border-radius:  0px 0px 15px 15px;
 }
 
+#react_Strip{
+    background: rgb(29, 29, 29);
+    border-radius: 25px;
+    padding: 0.5% 0.5% 0.1% 0.5%;
+    width: 23%;
+    position: absolute;
+    margin-top: -65xzpx;
+}
+#react_Strip > #zama-emoji{
+    margin-left: 1%;
+}
+
+
 #bottom-top-row{
     border-bottom: 1px solid rgb(228, 228, 228);
     border-bottom-width: 0.1px;
@@ -148,7 +161,7 @@ body{
     border-left: 1px solid rgb(228, 228, 228);
 }
 
-#like-btn > input[type=button]{
+.like-btn > input[type=button]{
     border: none;
     background: none;
 }
